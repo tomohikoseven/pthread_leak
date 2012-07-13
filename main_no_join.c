@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<pthread.h>
+
+int
+test( )
+{
+    return 2;
+}
+
+int
+main( )
+{
+    pthread_t   th_num;
+    int         ret;
+
+    ret = pthread_create( &th_num, NULL, ( void* )test, NULL );
+    if( 0 != ret )
+    {
+        printf( "pthread_create error.\n" );
+        exit( 1 );
+    }
+
+    return 0;
+}

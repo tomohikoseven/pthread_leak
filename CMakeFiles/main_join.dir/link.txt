@@ -1,0 +1,1 @@
+/usr/bin/ccache  gcc     CMakeFiles/main_join.dir/main_join.c.o  -o main_join -rdynamic -lpthread 

@@ -1,0 +1,2 @@
+/home/andre/work/c/pthread_leak/CMakeFiles/main_join.dir
+/home/andre/work/c/pthread_leak/CMakeFiles/main_no_join.dir

@@ -1,0 +1,7 @@
+cmake_minimum_required( VERSION 2.6 )
+project( test_pthread_leak )
+add_definitions( -g -Wall )
+add_executable(main_join main_join.c)
+add_executable(main_no_join main_no_join.c)
+target_link_libraries( main_join pthread )
+target_link_libraries( main_no_join pthread )
